@@ -30,7 +30,7 @@ header {
   align-items: center;
   height: 120px;
   z-index: 10000;
-  padding: 35px 80px;
+  padding: 35px 80px 0 80px;
   width: 100%;
   font-family: "Rubik", sans-serif;
   background-color: #ffcccc;
@@ -221,18 +221,19 @@ nav a:hover {
 .category-container{
   margin: 50px 0px 0px 0px;
   padding: 10px;
-
   font-family: 'Albert Sans', sans-serif;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .category-container .row {
+  width: fit-content;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
   margin: 10px;
   justify-content: center;
 }
